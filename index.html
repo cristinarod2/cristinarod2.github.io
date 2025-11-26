@@ -1,67 +1,88 @@
-<header>
-    <h1>Cristina Rodríguez</h1>
-    <p>Preclinical Molecular Imaging • PET • SPECT • CT</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristina Rodríguez</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<body>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cristina Rodríguez</h1>
+            <p class="subtitle">Preclinical Molecular Imaging • PET • SPECT • CT</p>
+            <a href="#about" class="cta">Learn More</a>
+        </div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Research Program Manager at UBC’s Molecular Imaging Research Facility, 
-        specializing in advanced preclinical imaging with a clear focus on PET, SPECT, and CT. 
-        My work bridges imaging science, radiochemistry, and quantitative analysis to enable 
-        high-impact translational research.
-        <br><br>
-        I design and lead complex in vivo and ex vivo imaging workflows, develop 
-        rigorous quantification pipelines, and collaborate closely with multidisciplinary teams 
-        to bring molecular imaging projects from concept to publication.
-        <br><br>
-        Beyond research management, I build custom Python tools and automated platforms that make 
-        laboratory workflows smarter, faster, and more reproducible — from tumour-tracking apps 
-        and radiotracer QC dashboards to 3D Slicer integrations and radioactive inventory systems.
-    </p>
-</section>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Preclinical Imaging Platform</h3>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
         <p>
-            Development and optimization of PET/SPECT/CT protocols, quantitative imaging strategies, 
-            calibration frameworks, and standardized multi-time-point workflows for animal studies.
+            I am a Research Program Manager at UBC’s Molecular Imaging Research Facility, 
+            specializing in advanced preclinical imaging with a clear focus on PET, SPECT, and CT. 
+            My work bridges imaging science, radiochemistry, and quantitative analysis to enable 
+            high-impact translational research.
+            <br><br>
+            I design and lead complex in vivo and ex vivo imaging workflows, develop 
+            rigorous quantification pipelines, and collaborate closely with multidisciplinary teams 
+            to bring molecular imaging projects from concept to publication.
+            <br><br>
+            Beyond research management, I build custom Python tools and automated platforms that make 
+            laboratory workflows smarter, faster, and more reproducible — from tumour-tracking apps 
+            and radiotracer QC dashboards to 3D Slicer integrations and radioactive inventory systems.
         </p>
-    </div>
+    </section>
 
-    <div class="project">
-        <h3>Custom Scientific Software</h3>
-        <p>
-            Creation of tailored Python applications for tumour volume tracking, imaging QC, 
-            radioactive inventory management, automated reporting, and data visualization — 
-            designed for real laboratory environments.
-        </p>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+        <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Hg-197m/g Theranostics</h3>
-        <p>
-            Method development for dual-isomer SPECT imaging, kinetic modeling, 
-            quantification workflows, and image-guided dosimetry for emerging radionuclide theranostics.
-        </p>
-    </div>
-</section>
+        <div class="project-card">
+            <h3>Preclinical Imaging Platform</h3>
+            <p>
+                Development and optimization of PET/SPECT/CT protocols, quantitative imaging strategies, 
+                calibration frameworks, and standardized multi-time-point workflows for animal studies.
+            </p>
+        </div>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:cristina.rodriguez@ubc.ca">cristina.rodriguez@ubc.ca</a></p>
-    <p>GitHub: <a href="https://github.com/cristinarod2">cristinarod2</a></p>
-</section>
+        <div class="project-card">
+            <h3>Custom Scientific Software</h3>
+            <p>
+                Creation of tailored Python applications for tumour volume tracking, imaging QC, 
+                radioactive inventory management, automated reporting, and data visualization — 
+                designed for real laboratory environments.
+            </p>
+        </div>
 
-<footer>
-    <p>© 2025 Cristina Rodríguez</p>
-</footer>
+        <div class="project-card">
+            <h3>Hg-197m/g Theranostics</h3>
+            <p>
+                Method development for dual-isomer SPECT imaging, kinetic modeling, 
+                quantification workflows, and image-guided dosimetry for emerging radionuclide theranostics.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:cristina.rodriguez@ubc.ca">cristina.rodriguez@ubc.ca</a></p>
+        <p>GitHub: <a href="https://github.com/cristinarod2">github.com/cristinarod2</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Cristina Rodríguez</p>
+    </footer>
+
+</body>
+</html>
