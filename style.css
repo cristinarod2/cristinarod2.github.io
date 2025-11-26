@@ -1,61 +1,129 @@
+/* GENERAL */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #fafafa;
+    font-family: "Inter", sans-serif;
+    background: #f8fafc;
     color: #333;
-    line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 50px 20px;
-    background: #e9f0ff;
-    border-bottom: 1px solid #d6e1ff;
+h1, h2, h3 {
+    font-weight: 700;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.section {
+    padding: 60px 12%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-header p {
-    margin: 5px 0 20px;
-    font-size: 1.2rem;
-    color: #555;
+.section.alt {
+    background: #eef2f7;
 }
 
-nav a {
-    margin: 0 15px;
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.navbar a {
+    margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
+    transition: opacity 0.2s;
 }
 
-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+.navbar a:hover {
+    opacity: 0.7;
 }
 
-h2 {
-    border-left: 4px solid #a8c2ff;
-    padding-left: 10px;
+/* HERO SECTION */
+.hero {
+    height: 60vh;
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed,
+        #ec4899
+    );
+    color: white;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1.6s ease;
 }
 
-.project {
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 26px;
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    color: #4f46e5;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background: #f0f0f0;
-    font-size: 0.9rem;
-    color: #555;
+    padding: 15px;
+    color: #666;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .section {
+        padding: 40px 8%;
+    }
 }
