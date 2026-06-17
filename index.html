@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Cristina Rodríguez - Manager, Imaging Scientist &amp; Scientific Software Developer</title>
-<meta name="description" content="CV of Dr. Cristina Rodríguez — Manager of UBC's Preclinical Imaging Research Program and creator of LabToolBox, open-source software that streamlines lab workflows for academic and research labs.">
+<title>Dr. Cristina Rodríguez — Imaging Scientist &amp; Scientific Software Developer</title>
+<meta name="description" content="CV of Dr. Cristina Rodríguez — Manager of UBC's Preclinical Imaging Research Facility and creator of LabToolBox, open-source software that streamlines lab workflows for academic and research labs.">
 <meta name="author" content="Cristina Rodríguez">
 <meta property="og:title" content="Dr. Cristina Rodríguez — Imaging Scientist &amp; Scientific Software Developer">
 <meta property="og:description" content="Multimodal preclinical imaging (PET · SPECT · CT · optical · microCT) and LabToolBox — open software for research labs.">
@@ -97,10 +97,7 @@
   .spotlight-card::after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.35),transparent 70%);top:-90px;right:-70px;pointer-events:none}
   .spotlight-card>*{position:relative;z-index:1}
   .sl-badge{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#c9b8ff;background:rgba(147,99,234,.22);border:1px solid rgba(167,139,250,.35);padding:.3rem .7rem;border-radius:999px}
-  .sl-logo{width:58px;height:58px;border-radius:15px;background:linear-gradient(135deg,#6d28d9,#9333ea);display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:#fff;margin:1.1rem 0 .9rem;box-shadow:0 10px 26px rgba(147,99,234,.45)}
-  .sl-name{font-size:1.7rem;font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1}
-  .sl-name span{font-weight:300;color:#c9c1ec}
-  .sl-tag{font-size:.92rem;color:#a78bfa;font-weight:500;margin:.35rem 0 .9rem}
+  .sl-logo-img{display:block;width:100%;max-width:300px;height:auto;margin:1.2rem 0 1rem;filter:drop-shadow(0 8px 22px rgba(0,0,0,.35))}
   .sl-desc{font-size:.9rem;color:#cdd2ee;margin-bottom:1.1rem}
   .sl-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
   .sl-chips span{font-size:.76rem;color:#d7dbf3;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:.32rem .7rem;border-radius:999px;display:inline-flex;align-items:center;gap:.4rem}
@@ -150,6 +147,10 @@
   @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:2rem}}
   .about-body p{margin-bottom:1.1rem;color:var(--text-soft)}
   .about-body p strong{color:var(--text)}
+  .about-side{display:flex;flex-direction:column;gap:1.3rem}
+  .portrait{margin:0;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--bg-tint,#eef0fc)}
+  .portrait img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center}
+  .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(91,95,224,.10));pointer-events:none}
   .about-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1.6rem;box-shadow:var(--shadow)}
   .about-card h4{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;margin-bottom:1rem}
   .fact{display:flex;gap:.85rem;align-items:flex-start;padding:.6rem 0;border-bottom:1px dashed var(--line)}
@@ -298,9 +299,9 @@
    <div class="hero-grid">
     <div class="hero-content">
     <span class="eyebrow"><span class="dot"></span> Molecular imaging &middot; Scientific software &middot; Translational research</span>
-    <h1>Imaging science, and <span class="grad">the software that advances it.</span></h1>
-    <div class="sub">Cristina Rodríguez, Ph.D. &mdash; Vancouver, Canada</div>
-    <p class="hero-lead">I manage UBC's Preclinical Imaging Research Facility and build the open software behind modern lab work. Chemist by training, imaging scientist by trade &mdash; uniting quantitative PET, SPECT, CT, optical and microCT imaging with custom tools that help research labs move from data to discovery, faster.</p>
+    <h1>Imaging the unseen, and building <span class="grad">the tools to measure it.</span></h1>
+    <div class="sub">Cristina Rodríguez, Ph.D. &middot; Imaging Facility Manager, Scientist &amp; Software Developer &middot; Vancouver, Canada</div>
+    <p class="hero-lead">Chemist by training, imaging scientist by trade. I manage UBC's Preclinical Imaging Research Facility &mdash; PET, SPECT, CT, optical and microCT &mdash; and build the open software behind it, giving research labs custom tools to move from data to discovery, faster.</p>
     <div class="hero-actions">
       <a href="#labtoolbox" class="btn btn-primary"><i class="fa-solid fa-cubes"></i> Explore LabToolBox</a>
       <a href="#experience" class="btn btn-ghost"><i class="fa-solid fa-timeline"></i> View experience</a>
@@ -318,9 +319,7 @@
     <div class="hero-visual">
       <div class="spotlight-card">
         <span class="sl-badge">Independent project</span>
-        <div class="sl-logo"><i class="fa-solid fa-toolbox"></i></div>
-        <div class="sl-name">Lab<span>ToolBox</span></div>
-        <div class="sl-tag">Streamline. Organize. Innovate.</div>
+        <img class="sl-logo-img" src="LabToolBox_icon1.png" alt="LabToolBox — Streamline. Organize. Innovate.">
         <p class="sl-desc">Open software that streamlines lab workflows &mdash; image analysis, calibration, monitoring and inventory. Free for academic &amp; research labs.</p>
         <div class="sl-chips">
           <span><i class="fa-solid fa-chart-area"></i> Image analysis</span>
@@ -353,19 +352,24 @@
       <div class="about-body reveal">
         <span class="klabel">About</span>
         <h2 style="font-size:clamp(1.7rem,3.6vw,2.3rem);margin:.5rem 0 1rem;">Dr. Cristina Rodríguez</h2>
-        <p><strong>Chemist by training, imaging scientist by trade.</strong> I manage UBC's Preclinical Imaging Research Program at the Centre for Comparative Medicine, leading the strategy and daily operations of multimodal imaging platforms &mdash; PET, SPECT, CT, and, more recently, optical imaging and microCT &mdash; across multiple campus sites.</p>
+        <p><strong>Chemist by training, imaging scientist by trade.</strong> I manage UBC's Preclinical Imaging Research Facility at the Centre for Comparative Medicine, leading the strategy and daily operations of multimodal imaging platforms &mdash; PET, SPECT, CT, and, more recently, optical imaging and microCT &mdash; across multiple campus sites.</p>
         <p>My background is unusually broad for the field: it spans medicinal chemistry, radiopharmaceutical development, molecular modelling, and quantitative preclinical imaging. That range lets me support investigators end to end &mdash; from experimental design and acquisition through image analysis and data interpretation &mdash; while keeping complex, multi-project programs compliant, on budget, and running smoothly.</p>
         <p>I also build my own software. With <strong>Python</strong> for analysis and modelling, and modern web technologies &mdash; <strong>HTML, CSS, JavaScript and React</strong> &mdash; for portals and dashboards, I develop tools that automate and modernize lab workflows: quantitative image analysis, SPECT calibration, tumour monitoring, and inventory management. These are gathered under <strong>LabToolBox</strong> and shared openly with academic and research labs.</p>
         <p>Design matters to me as much as function. I design and build websites, and create scientific communication material &mdash; conference posters, graphical abstracts, and figures &mdash; that make complex research clear and compelling.</p>
       </div>
-      <aside class="about-card reveal">
+      <div class="about-side reveal">
+      <figure class="portrait">
+        <img src="Cristina.jpeg" alt="Dr. Cristina Rodríguez" loading="lazy">
+      </figure>
+      <aside class="about-card">
         <h4>At a glance</h4>
-        <div class="fact"><i class="fa-solid fa-briefcase"></i><div class="v">Manager, Preclinical Imaging Research Program<small>UBC &middot; Centre for Comparative Medicine</small></div></div>
+        <div class="fact"><i class="fa-solid fa-briefcase"></i><div class="v">Manager, Preclinical Imaging Research Facility<small>UBC &middot; Centre for Comparative Medicine</small></div></div>
         <div class="fact"><i class="fa-solid fa-graduation-cap"></i><div class="v">Ph.D., Medicinal &amp; Bioinorganic Chemistry<small>Universitat Autònoma de Barcelona</small></div></div>
         <div class="fact"><i class="fa-solid fa-flask-vial"></i><div class="v">Multimodal imaging<small>PET · SPECT · CT · Optical · microCT</small></div></div>
         <div class="fact"><i class="fa-solid fa-code-branch"></i><div class="v">Open scientific software<small>LabToolBox · Python</small></div></div>
         <div class="fact"><i class="fa-solid fa-location-dot"></i><div class="v">Vancouver, Canada<small>The University of British Columbia</small></div></div>
       </aside>
+      </div><!-- /about-side -->
     </div>
   </div>
 </section>
@@ -382,9 +386,9 @@
 
       <div class="tl-item reveal">
         <div class="tl-date">DEC 2020 &ndash; PRESENT</div>
-        <h3>Manager, Preclinical Imaging Research Program</h3>
+        <h3>Manager, Preclinical Imaging Research Facility</h3>
         <div class="tl-org"><i class="fa-solid fa-building-columns"></i> The University of British Columbia</div>
-        <p>Lead strategy and daily operations of UBC's multimodal imaging program across PET, SPECT, CT, optical and microCT, over multiple campus sites. Own budgeting and regulatory compliance, and guide investigators on experimental design, quantitative image analysis, and data interpretation at every stage. Build custom Python tools that automate quantification, calibration, and data management to cut manual processing time and improve reproducibility.</p>
+        <p>Lead strategy and daily operations of UBC's multimodal imaging facility across PET, SPECT, CT, optical and microCT, over multiple campus sites. Own budgeting and regulatory compliance, and guide investigators on experimental design, quantitative image analysis, and data interpretation at every stage. Build custom Python tools that automate quantification, calibration, and data management to cut manual processing time and improve reproducibility.</p>
       </div>
 
       <div class="tl-item cyan reveal">
@@ -405,7 +409,7 @@
         <div class="tl-date">OCT 2014 &ndash; DEC 2020</div>
         <h3>Lab Manager &amp; Research Associate, Preclinical Nuclear Imaging</h3>
         <div class="tl-org"><i class="fa-solid fa-building-columns"></i> The University of British Columbia</div>
-        <p>Helped build and expand UBC's preclinical PET, SPECT, and CT platforms in collaboration with investigators across UBC, TRIUMF, and local biotech. Oversaw instrument maintenance and workflow optimization, trained users, and supported study design, analysis, and scientific reporting &mdash; with full compliance to safety and ethics standards. This foundation became the program I now lead.</p>
+        <p>Helped build and expand UBC's preclinical PET, SPECT, and CT platforms in collaboration with investigators across UBC, TRIUMF, and local biotech. Oversaw instrument maintenance and workflow optimization, trained users, and supported study design, analysis, and scientific reporting &mdash; with full compliance to safety and ethics standards. This foundation became the facility I now lead.</p>
       </div>
 
       <div class="tl-item reveal">
@@ -461,7 +465,7 @@
         <div>
           <span class="tag">Open software for research labs</span>
           <h2>Software that streamlines the lab workflow</h2>
-          <p>LabToolBox is my independent initiative to develop software that streamlines how research labs actually work &mdash; from quantitative image analysis and instrument calibration to study planning and inventory. Most of it is offered <strong>open and free for academic and research labs</strong>, built around real scientific needs rather than guesses about them.</p>
+          <p>LabToolBox is my independent initiative &mdash; one home for a growing suite of tools that streamline how research labs actually work, from quantitative image analysis and instrument calibration to study planning and inventory. Each tool tackles a real bottleneck I've hit in the lab, and most are offered <strong>open and free for academic and research labs</strong>.</p>
           <div class="ltb-pills">
             <span><i class="fa-brands fa-python"></i> Python</span>
             <span><i class="fa-solid fa-cube"></i> 3D Slicer</span>
