@@ -186,9 +186,11 @@
   @media(max-width:820px){.tools{grid-template-columns:1fr}}
   .tool{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;transition:transform .18s,box-shadow .18s,border-color .18s}
   .tool:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line-strong)}
-  .tool .top{display:flex;align-items:center;gap:.7rem;margin-bottom:.5rem}
-  .tool .ic{width:38px;height:38px;border-radius:10px;background:var(--accent-tint);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+  .tool .top{display:flex;align-items:center;gap:.9rem;margin-bottom:.6rem}
+  .tool .ic{width:58px;height:58px;border-radius:14px;background:var(--accent-tint);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
   .tool .ic.cy{background:var(--cyan-tint);color:#6d28d9}
+  .tool .ic.img{padding:0;overflow:hidden;background:none;box-shadow:0 4px 12px rgba(16,20,40,.12)}
+  .tool .ic.img img{width:100%;height:100%;object-fit:cover;display:block}
   .tool h3{font-size:1.04rem}
   .tool .cat{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:.55rem}
   .tool p{font-size:.9rem;color:var(--text-soft);margin-bottom:.9rem}
@@ -339,7 +341,7 @@
     <div class="row">
       <div class="stat"><div class="ic"><i class="fa-solid fa-microscope"></i></div><div class="num" data-target="20" data-suffix="+">0</div><div class="lbl">Years in chemistry &amp; imaging</div></div>
       <div class="stat"><div class="ic"><i class="fa-solid fa-layer-group"></i></div><div class="num" data-target="5">0</div><div class="lbl">Imaging modalities</div></div>
-      <div class="stat"><div class="ic"><i class="fa-solid fa-code"></i></div><div class="num" data-target="6" data-suffix="+">0</div><div class="lbl">Open software tools</div></div>
+      <div class="stat"><div class="ic"><i class="fa-solid fa-code"></i></div><div class="num" data-target="9" data-suffix="+">0</div><div class="lbl">Software tools built</div></div>
       <div class="stat"><div class="ic"><i class="fa-solid fa-book-open"></i></div><div class="num" data-target="60" data-suffix="+">0</div><div class="lbl">Peer-reviewed publications</div></div>
     </div>
   </div>
@@ -480,49 +482,70 @@
     <div class="tools">
 
       <div class="tool reveal">
-        <div class="top"><span class="ic"><i class="fa-solid fa-chart-area"></i></span><h3>MIRA</h3></div>
+        <div class="top"><span class="ic img"><img src="ic_mira.png" alt="MIRA"></span><h3>MIRA</h3></div>
         <div class="cat">Quantification platform</div>
         <p>End-to-end quantitative analysis of preclinical PET/SPECT/CT &mdash; from raw scans to time-activity curves, %ID/g, SUV, and dosimetry, in standardized, regulator-ready reports.</p>
-        <div class="foot"><span class="plink muted">Case study soon</span><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
+        <div class="foot"><a class="plink" href="https://invivoimaging.ca/resources/software/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn more</a><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
       </div>
 
       <div class="tool reveal">
-        <div class="top"><span class="ic"><i class="fa-solid fa-cubes-stacked"></i></span><h3>SpectraViewer</h3></div>
+        <div class="top"><span class="ic img"><img src="ic_spectra.png" alt="SpectraViewer"></span><h3>SpectraViewer</h3></div>
         <div class="cat">Imaging visualization</div>
         <p>Interactive viewing of multi-dimensional imaging data &mdash; exploring volumes, spectra, and time-series side by side to turn complex datasets into insight.</p>
         <div class="foot"><span class="plink muted">Case study soon</span><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
       </div>
 
       <div class="tool reveal">
-        <div class="top"><span class="ic"><i class="fa-solid fa-calendar-check"></i></span><h3>Study Designer</h3></div>
-        <div class="cat">Study planning</div>
-        <p>A planning tool for preclinical imaging studies &mdash; structuring cohorts, time points, tracers, and protocols so experiments are sound, consistent, and reproducible from the start.</p>
-        <div class="foot"><span class="plink muted">Case study soon</span><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
+        <div class="top"><span class="ic img"><img src="ic_mosaic.png" alt="MOSAIC"></span><h3>MOSAIC</h3></div>
+        <div class="cat">Figure composer · In-browser</div>
+        <p>A browser-based composer that standardizes preclinical imaging figures &mdash; replacing fragmented PowerPoint, Illustrator and Photoshop workflows with row &times; time-point grids, reference colorbars, consistent typography, and journal-ready export.</p>
+        <div class="foot"><a class="plink" href="https://invivoimaging.ca/resources/software/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Learn more</a><span class="oa"><i class="fa-solid fa-shield-halved"></i> 100% local</span></div>
       </div>
 
       <div class="tool reveal">
-        <div class="top"><span class="ic cy"><i class="fa-solid fa-atom"></i></span><h3>HgQuant</h3></div>
+        <div class="top"><span class="ic img"><img src="ic_hgquant.png" alt="HgQuant"></span><h3>HgQuant</h3></div>
         <div class="cat">Kinetic modeling · Python</div>
         <p>Models the decay of Mercury-197 isomers (¹⁹⁷mHg → ¹⁹⁷gHg) with Bateman equations &mdash; supporting dual-isomer SPECT theranostics and image-guided dosimetry.</p>
         <div class="foot"><a class="plink" href="https://github.com/cristinarod2/HgQuant" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><span class="oa"><i class="fa-solid fa-lock-open"></i> Open</span></div>
       </div>
 
       <div class="tool reveal">
-        <div class="top"><span class="ic cy"><i class="fa-solid fa-arrow-right-arrow-left"></i></span><h3>Rodent Transfer Portal</h3></div>
+        <div class="top"><span class="ic img"><img src="ic_rtp.png" alt="Rodent Transfer Portal"></span><h3>Rodent Transfer Portal</h3></div>
         <div class="cat">Web portal · Operations</div>
         <p>A portal for submitting, tracking, and documenting animal transfers between preclinical facilities &mdash; replacing email and paper with a clear, auditable record trail.</p>
         <div class="foot"><a class="plink" href="https://github.com/cristinarod2/RodentTransferPortal" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><span class="oa"><i class="fa-solid fa-lock-open"></i> Open</span></div>
       </div>
 
       <div class="tool reveal">
-        <div class="top"><span class="ic"><i class="fa-solid fa-radiation"></i></span><h3>RadioInventory</h3></div>
+        <div class="top"><span class="ic img"><img src="ic_radioinv.png" alt="RadioInventory"></span><h3>RadioInventory</h3></div>
         <div class="cat">Lab operations &amp; compliance</div>
         <p>Tracking of radioactive isotopes, decay, and usage across the facility &mdash; automating inventory and QC records to keep the lab safe, compliant, and audit-ready.</p>
         <div class="foot"><span class="plink muted">Case study soon</span><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
       </div>
 
+      <div class="tool reveal">
+        <div class="top"><span class="ic img"><img src="SOP_Manager_Logo.svg" alt="SOP Manager"></span><h3>SOP Manager</h3></div>
+        <div class="cat">SOP lifecycle · In-browser</div>
+        <p>One tool for the whole SOP lifecycle &mdash; structured authoring with auto-numbered steps, branded templates, and version &amp; status control (Draft &rarr; Active &rarr; Retired), with a searchable library that regenerates audit-ready Word and PDF files. A single HTML file that runs offline.</p>
+        <div class="foot"><a class="plink" href="sop-manager.html" target="_blank" rel="noopener"><i class="fa-solid fa-window-maximize"></i> View demo</a><span class="oa"><i class="fa-solid fa-shield-halved"></i> 100% local</span></div>
+      </div>
+
+      <div class="tool reveal">
+        <div class="top"><span class="ic img"><img src="ic_antibody.png" alt="Antibody DataBank"></span><h3>Antibody DataBank</h3></div>
+        <div class="cat">Lab inventory · Database</div>
+        <p>A lightweight database for the lab's antibody inventory &mdash; cataloguing stocks, suppliers, lots, and validation details so reagents are easy to find, track, and reorder.</p>
+        <div class="foot"><a class="plink" href="https://github.com/cristinarod2/Antibody-DataBank" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><span class="oa"><i class="fa-solid fa-lock-open"></i> Open</span></div>
+      </div>
+
+      <div class="tool reveal">
+        <div class="top"><span class="ic img"><img src="ic_folio.png" alt="FolioLab"></span><h3>FolioLab</h3></div>
+        <div class="cat">Document templates</div>
+        <p>A library of branded document templates for the lab &mdash; lab reports, protocols, user manuals, and manuscripts &mdash; so routine paperwork starts polished, consistent, and on-brand.</p>
+        <div class="foot"><span class="plink muted">Lab toolkit</span><span class="oa"><i class="fa-solid fa-graduation-cap"></i> Academic</span></div>
+      </div>
+
     </div>
-    <p class="tools-foot reveal">More open-source work on <a href="https://github.com/cristinarod2" target="_blank" rel="noopener">github.com/cristinarod2</a>, including the Antibody DataBank and teaching materials for PHAR518.</p>
+    <p class="tools-foot reveal">More open-source work on <a href="https://github.com/cristinarod2" target="_blank" rel="noopener">github.com/cristinarod2</a>, plus teaching materials for PHAR518.</p>
   </div>
 </section>
 

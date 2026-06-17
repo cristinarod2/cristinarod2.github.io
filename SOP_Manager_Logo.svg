@@ -1,0 +1,20 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SOP Manager logo">
+  <defs>
+    <linearGradient id="sopmBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00264f"/>
+      <stop offset="1" stop-color="#0055B7"/>
+    </linearGradient>
+    <linearGradient id="sopmBadge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A7E1"/>
+      <stop offset="1" stop-color="#6EC4E8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#sopmBg)"/>
+  <path d="M15 11h12l6 6v19a2.5 2.5 0 0 1-2.5 2.5H15A2.5 2.5 0 0 1 12.5 36V13.5A2.5 2.5 0 0 1 15 11z" fill="#ffffff"/>
+  <path d="M27 11v6h6z" fill="#c9ddf6"/>
+  <rect x="16.5" y="22" width="13" height="2" rx="1" fill="#a7bedb"/>
+  <rect x="16.5" y="26.5" width="13" height="2" rx="1" fill="#a7bedb"/>
+  <rect x="16.5" y="31" width="8" height="2" rx="1" fill="#a7bedb"/>
+  <circle cx="33" cy="33" r="7.6" fill="url(#sopmBadge)" stroke="#ffffff" stroke-width="2"/>
+  <path d="M29.8 33l2.1 2.1 4-4.2" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
